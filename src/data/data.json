@@ -1,0 +1,38 @@
+[
+  {
+    "title": "juramentada",
+    "author": "brandon sanderson",
+    "genre": "fantasía",
+    "year": "2016",
+    "cost": "1500",
+    "price": "2000",
+    "id": "-juramentada-"
+  },
+  {
+    "title": "el camino de los reyes",
+    "author": "brandon sanderson",
+    "genre": "fantasía",
+    "year": "2008",
+    "cost": "1500",
+    "price": "2000",
+    "id": "-el camino de los reyes-"
+  },
+  {
+    "title": "palabras radiantes",
+    "author": "brandon sanderson",
+    "genre": "fantasía",
+    "year": "2013",
+    "cost": "1500",
+    "price": "2000",
+    "id": "-palabras radiantes-"
+  },
+  {
+    "title": "el ritmo de la guerra",
+    "author": "brandon sanderson",
+    "genre": "fantasía",
+    "year": "2020",
+    "cost": "1500",
+    "price": "2000",
+    "id": "-el ritmo de la guerra-"
+  }
+]
