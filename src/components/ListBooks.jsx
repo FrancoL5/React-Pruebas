@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
-import List from "./list";
+import List from "./List";
 import listBooks from "../data/data.json";
-
+import "./componentsStyle.css"
 
 function ListBooks() {
 	const [list, setList] = useState([]);
@@ -20,7 +20,13 @@ function ListBooks() {
 	return (
 		<Fragment>
 			<List data={list} />
-			<button onClick={handleListAdd}>➕</button>
+			<button 
+				className={counter === listBooks.length 
+					? "redButton"
+					: ""}
+				onClick={handleListAdd}> 
+				➕ 
+			</button>
 		</Fragment>
 	);
 }

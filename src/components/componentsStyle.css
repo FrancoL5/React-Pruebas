@@ -1,0 +1,13 @@
+.redButton{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(239,116,116,1) 89%)
+
+}
+.redButton:hover{
+    outline: 2px ridge rgb(150, 52, 52);
+}
+
+.appMainDiv{
+    background: rgb(98,117,166);
+    background: linear-gradient(80deg, rgba(98,117,166,1) 21%, rgba(126,131,119,1) 89%);
+}

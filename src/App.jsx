@@ -1,13 +1,13 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ListBooks from "./components/ListBooks";
-
+import "./components/componentsStyle.css"
 
 function App() {
 
 	return (
-		<Fragment>
-			<ListBooks />
-		</Fragment>
+		<div className="appMainDiv">
+			<ListBooks/>
+		</div>
 	);
 }
 
