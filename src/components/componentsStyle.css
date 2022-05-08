@@ -8,6 +8,19 @@
 }
 
 .appMainDiv{
-    background: rgb(98,117,166);
-    background: linear-gradient(80deg, rgba(98,117,166,1) 21%, rgba(126,131,119,1) 89%);
+    padding: 0.5%;
+    color: white;
+    border-style: groove;
+    border-color: black;
+    
+}
+.pSearchResult{
+    padding-left: 5px;
+    border-radius: 10px;
+    background: rgb(94,25,25);
+    background: linear-gradient(90deg, rgba(94,25,25,1) 9%, rgba(20,20,20,1) 22%, rgba(31,31,31,1) 90%, rgba(235,235,235,1) 100%);
+    color: white;
+}
+body{
+    background-color: grey;
 }

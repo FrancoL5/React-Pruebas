@@ -1,12 +1,12 @@
 import React, { Fragment, useState } from "react";
 import List from "./List";
+import SearchBook from "./SearchBook";
 import listBooks from "../data/data.json";
-import "./componentsStyle.css"
 
 function ListBooks() {
 	const [list, setList] = useState([]);
 	const [counter, setCounter] = useState(0);
-
+	
 	const handleListAdd = function () {
 		if(counter === listBooks.length){ 
 			setCounter(0);
@@ -19,6 +19,7 @@ function ListBooks() {
 
 	return (
 		<Fragment>
+			<SearchBook books={listBooks} />
 			<List data={list} />
 			<button 
 				className={counter === listBooks.length 
