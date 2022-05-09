@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import SearchBookResult from "./BookDisplay"
 
 const SearchBook = props => {
     const books = props.books;
@@ -8,17 +9,10 @@ const SearchBook = props => {
     const onSubmit = e =>{
         const book = books.filter(e=> e.id === search);
         const firstBook = book[0];
+
         setResult(
             book.length !== 0 
-            ? <>
-            <li>Título: {firstBook.title}</li>  
-            <li>Autor: {firstBook.author}</li>
-            <li>Género: {firstBook.genre}</li>
-            <li>Año: {firstBook.year}</li> 
-            <li>Costo: {firstBook.cost}$</li>
-            <li>Precio: {firstBook.price}$</li>
-            <li> ID: {firstBook.id}</li>
-            </>
+            ? <SearchBookResult book = {firstBook}/>
             : "no se encontró"
             );
         e.preventDefault();
@@ -31,8 +25,8 @@ const SearchBook = props => {
     return (
         <>
             <form onSubmit={onSubmit} className="searchForm">
-                <input type="text" onChange={handleSearch}/>
-                <button type="submit">
+                <input type="text" onChange={handleSearch} placeholder="Book"/>
+                <button type="submit" className="searchButton">
                     search
                 </button>
                 <br/>
