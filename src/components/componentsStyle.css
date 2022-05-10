@@ -43,6 +43,18 @@
     border-color: black;
     margin-left: 2%;
 }
+.liNotShow{
+    padding: 1%;
+    transition: 0.5s;
+}
+.liShow{
+    margin: 1%;
+    background-color: rgba(131, 131, 131, 0.42);
+    padding: 2%;
+    border-radius: 20px;
+    border: solid rgb(72, 72, 72);
+    transition: 0.5s;
+}
 input[type=text] {
     background-color: rgb(203, 202, 202);
     padding:4px;

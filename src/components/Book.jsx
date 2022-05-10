@@ -9,19 +9,21 @@ const Book = props => {
 	}
 
 	return (
-		<li>
-			<p className="pDisplayText" onClick={handleBookDisplay}>
-				{book.title},{" " + book.author},{" " + book.year}
-			</p>
-			{
-			show ? 	
-				<div className="bookDisplay">
-					<BookDisplay book={book}/>
-				</div>
-				:	
-				<></>
-			}
-		</li>
+		<div className={show ? "liShow":"liNotShow"}>
+			<li>
+				<p className="pDisplayText" onClick={handleBookDisplay}>
+					{book.title},{" " + book.author},{" " + book.year}
+				</p>
+				{
+				show ? 	
+					<div className="bookDisplay">
+						<BookDisplay book={book}/>
+					</div>
+					:	
+					<></>
+				}
+			</li>
+		</div>
 	);
 }
 export default Book;
